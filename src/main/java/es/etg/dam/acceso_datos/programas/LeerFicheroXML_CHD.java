@@ -17,14 +17,13 @@ public class LeerFicheroXML_CHD {
     public static void main(String[] args) throws IOException {
         try
         {
-                    SAXParserFactory factory = SAXParserFactory.newInstance();
-                    SAXParser parser = factory.newSAXParser();
-                    GestionContenido gestor = new GestionContenido();
-                    parser.parse(ARCHIVO_XML, gestor);
+                SAXParserFactory factory = SAXParserFactory.newInstance();
+                SAXParser parser = factory.newSAXParser();
+                GestionContenido gestor = new GestionContenido();
+                parser.parse(ARCHIVO_XML, gestor);
         }
         catch(ParserConfigurationException | SAXException ex){
             System.out.println(ex.getMessage());
         }
-    }
-    
+    }  
 }

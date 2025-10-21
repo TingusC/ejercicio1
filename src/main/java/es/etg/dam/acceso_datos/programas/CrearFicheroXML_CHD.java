@@ -16,10 +16,10 @@ public class CrearFicheroXML_CHD {
 
     public static final String ARCHIVO = "src/main/resources/ficheros/jugadores.dat";
     public static final String ARCHIVO_XML = "src/main/resources/ficheros/Jugadores.xml";
-    public static final String XML_VERSION = "1.0";
+    public static final String PERMISOS_ARCHIVO = "r";
     
     public static void main(String[] args) throws FileNotFoundException, IOException, ParserConfigurationException, TransformerFactoryConfigurationError, TransformerException {
-        try(RandomAccessFile archivo = new RandomAccessFile(ARCHIVO, "r"))
+        try(RandomAccessFile archivo = new RandomAccessFile(ARCHIVO, PERMISOS_ARCHIVO))
         {
             
             Document documento = crear();
@@ -41,7 +41,6 @@ public class CrearFicheroXML_CHD {
         DocumentBuilder builder = factory.newDocumentBuilder();
         DOMImplementation implementacion = builder.getDOMImplementation();
         Document ret = implementacion.createDocument(null, NOMBRE_RAIZ, null);
-        ret.setXmlVersion(XML_VERSION);
 
         return ret;
     }
