@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Jugadores>
+    <Jugador>
+        <codigo>1</codigo>
+        <nombre>LeBron James</nombre>
+        <equipo>Cavaliers</equipo>
+        <PXP>27.0</PXP>
+        <activo>true</activo>
+    </Jugador>
+    <Jugador>
+        <codigo>2</codigo>
+        <nombre>Michael Jordan</nombre>
+        <equipo>Bulls</equipo>
+        <PXP>30.1</PXP>
+        <activo>false</activo>
+    </Jugador>
+    <Jugador>
+        <codigo>3</codigo>
+        <nombre>Nikola Jokic</nombre>
+        <equipo>Nuggets</equipo>
+        <PXP>21.8</PXP>
+        <activo>true</activo>
+    </Jugador>
+    <Jugador>
+        <codigo>4</codigo>
+        <nombre>Kobe Bryant</nombre>
+        <equipo>Lakers</equipo>
+        <PXP>25.0</PXP>
+        <activo>false</activo>
+    </Jugador>
+    <Jugador>
+        <codigo>5</codigo>
+        <nombre>Derrick Rose</nombre>
+        <equipo>Bulls</equipo>
+        <PXP>17.0</PXP>
+        <activo>false</activo>
+    </Jugador>
+</Jugadores>
