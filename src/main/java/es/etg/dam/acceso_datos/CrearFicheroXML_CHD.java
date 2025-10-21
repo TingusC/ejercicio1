@@ -5,7 +5,6 @@ import javax.xml.parsers.*;
 import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-
 import org.w3c.dom.*;
 
 public class CrearFicheroXML_CHD {
@@ -15,11 +14,12 @@ public class CrearFicheroXML_CHD {
     public static final String NOMBRE_ETIQUETA = "Jugador";
     public static final String[] NOMBRES_ATRIBUTOS = {"codigo", "nombre", "equipo", "PXP", "activo"};
 
+    public static final String ARCHIVO = "src/main/resources/ficheros/jugadores.dat";
     public static final String ARCHIVO_XML = "src/main/resources/ficheros/Jugadores.xml";
     public static final String XML_VERSION = "1.0";
     
     public static void main(String[] args) throws FileNotFoundException, IOException, ParserConfigurationException, TransformerFactoryConfigurationError, TransformerException {
-        try(RandomAccessFile archivo = new RandomAccessFile(CrearFichero_CHD.ARCHIVO, "r"))
+        try(RandomAccessFile archivo = new RandomAccessFile(ARCHIVO, "r"))
         {
             
             Document documento = crear();

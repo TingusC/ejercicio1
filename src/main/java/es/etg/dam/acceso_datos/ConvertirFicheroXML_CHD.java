@@ -16,6 +16,7 @@ import javax.xml.transform.stream.StreamSource;
 public class ConvertirFicheroXML_CHD {
     public static final String ESTILOS_XSL = "src/main/resources/Plantillas/Plantilla.xsl";
 
+    public static final String ARCHIVO_XML = "src/main/resources/ficheros/Jugadores.xml";
     public static final String ARCHIVO_HTML = "src/main/resources/ficheros/Jugadores.html";
     
     public static void main(String[] args) throws TransformerFactoryConfigurationError, TransformerException, IOException {
@@ -24,7 +25,7 @@ public class ConvertirFicheroXML_CHD {
         FileOutputStream out = new FileOutputStream(html);
 
         Source plantilla = new StreamSource(ESTILOS_XSL);
-        Source datos = new StreamSource(CrearFicheroXML_CHD.ARCHIVO_XML);
+        Source datos = new StreamSource(ARCHIVO_XML);
         Result resultado = new StreamResult(out);
 
 
