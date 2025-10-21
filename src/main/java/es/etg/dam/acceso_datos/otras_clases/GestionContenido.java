@@ -1,6 +1,4 @@
-package es.etg.dam.acceso_datos;
-
-import java.util.jar.Attributes;
+package es.etg.dam.acceso_datos.otras_clases;
 
 import org.xml.sax.helpers.DefaultHandler;
 

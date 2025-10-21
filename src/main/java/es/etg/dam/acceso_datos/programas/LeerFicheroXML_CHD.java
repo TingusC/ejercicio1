@@ -1,4 +1,4 @@
-package es.etg.dam.acceso_datos;
+package es.etg.dam.acceso_datos.programas;
 
 import java.io.IOException;
 
@@ -7,6 +7,8 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.SAXException;
+
+import es.etg.dam.acceso_datos.otras_clases.GestionContenido;
 
 public class LeerFicheroXML_CHD {
 

@@ -1,4 +1,4 @@
-package es.etg.dam.acceso_datos;
+package es.etg.dam.acceso_datos.programas;
 
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;

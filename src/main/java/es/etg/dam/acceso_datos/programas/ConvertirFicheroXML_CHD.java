@@ -1,4 +1,4 @@
-package es.etg.dam.acceso_datos;
+package es.etg.dam.acceso_datos.programas;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -14,7 +14,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 public class ConvertirFicheroXML_CHD {
-    public static final String ESTILOS_XSL = "src/main/resources/Plantillas/Plantilla.xsl";
+    public static final String ESTILOS_XSL = "src/main/resources/plantillas/Plantilla.xsl";
 
     public static final String ARCHIVO_XML = "src/main/resources/ficheros/Jugadores.xml";
     public static final String ARCHIVO_HTML = "src/main/resources/ficheros/Jugadores.html";
